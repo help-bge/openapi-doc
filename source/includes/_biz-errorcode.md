@@ -95,7 +95,7 @@
 | 1096 | Account does not exist |
 | 1097 | System timeout                             |
 | 1098 | The system is busy                             |
-
+| 1101 | Trading pair and account type mismatch                            |
 
 
 
