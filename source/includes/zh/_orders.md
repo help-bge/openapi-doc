@@ -58,7 +58,7 @@ REQUEST PARAMETERS
 - `cn`: 即 `cancle newest`, 当撮合发生相同用户订单匹配时，最新订单会被执行`cancle`指令，较早的挂单依然停留在订单簿，执行正常的交易撮合流程。
 - `cb`: 即 `cancle both`,当撮合发生相同用户订单匹配时，发生匹配的两个订单，均会被执行`cancle`指令。
 
-`time_in_force`: 可选，交易指令，目前支持 `GTC`。默认值为 `GTC`
+`time_in_force`: 可选，交易指令，目前支持 `GTC`、`FOK`。默认值为 `GTC`
 
 **limit order parameters**
 
