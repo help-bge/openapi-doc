@@ -288,6 +288,7 @@
       "funds": "1.00000000",
       "filled_size": "0.00000000",
       "type": "limit",
+      "timeInForce": "GTC",
       "status": "1",
       "client_oid": ""
     }
@@ -359,6 +360,7 @@
 | funds         | 想要使用的报价货币数量           | string |
 | filled_size   | 成交金额                  | string |
 | type          | limit:限价单/market:市价单/ | string |
+| timeInForce   | 订单有效方式                | string |
 | status        | 状态                    | string |
 | client_oid    | 默认"0"，用户自定义订单号              | string |
 

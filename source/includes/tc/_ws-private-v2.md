@@ -288,6 +288,7 @@
       "funds": "1.00000000",
       "filled_size": "0.00000000",
       "type": "limit",
+      "timeInForce": "GTC",
       "status": "1",
       "client_oid": ""
     }
@@ -359,6 +360,7 @@
 | funds         | 想要使用的報價貨幣數量           | string |
 | filled_size   | 成交金額                  | string |
 | type          | limit:限價單/market:市價單/ | string |
+| timeInForce   | 訂單有效方式                | string |
 | status        | 狀態                    | string |
 | client_oid    | 默認"0"，用戶自定義訂單號              | string |
 

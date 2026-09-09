@@ -288,6 +288,7 @@ Please refer to [Common Request Parameter Description](#v2-req-param) and [Gener
       "funds": "1.00000000",
       "filled_size": "0.00000000",
       "type": "limit",
+      "timeInForce": "GTC",
       "status": "1",
       "client_oid": ""
     }
@@ -359,6 +360,7 @@ Description of order data fields, please ignore other fields other than this des
 | funds | Amount of quote currency to use | string |
 | filled_size | transaction amount | string |
 | type | limit: limit order/market: market order/ | string |
+| timeInForce | order time-in-force instruction | string |
 | status | status | string |
 | client_oid | default "0", user-defined order number | string |
 

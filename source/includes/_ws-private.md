@@ -203,6 +203,7 @@ RESPONSE PARAMETERS
 |funds|Amount of quote currency to use |string||
 |filled_size| transaction amount |string||
 |type|limit: limit order/market: market order/|string||
+|timeInForce|order time-in-force instruction|string|GTC, IOC, FOK|
 |status|status|string||
 |client_oid| default "0", user-defined order number | string ||
 
@@ -236,6 +237,7 @@ RESPONSE PARAMETERS
     "funds": "1",
     "filled_size": "0",
     "type": "limit",
+    "timeInForce": "GTC",
     "status": "1",
     "client_oid": ""
   }
