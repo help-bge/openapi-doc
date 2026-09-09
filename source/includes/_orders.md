@@ -58,7 +58,7 @@ REQUEST PARAMETERS
 - `cn`: that is `cancle newest`, when matching occurs with the same user order matching, the latest order will be executed `cancle` command, the earlier pending order still stays in the order book, and the normal transaction matching process will be executed.
 - `cb`: that is `cancle both`, when the matching of the same user order occurs, the two matching orders will be executed `cancle` command.
 
-`time_in_force`: optional, transaction command, currently supports `GTC`、`FOK`. The default is `GT12C`
+`time_in_force`: optional, transaction command, currently supports `GTC`、`FOK`. The default is `GTC`
 
 **limit order parameters**
 
