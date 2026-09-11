@@ -26,6 +26,7 @@ POST [HOST](#HTTP-HOST)/v1/orders
   "product": "BTC_USDT",
   "side": "buy",
   "type": "limit",
+  "time_in_force": "GTC",
   "stp": "dc",
   "price": "2.00",
   "size": "3.300000000000000000",

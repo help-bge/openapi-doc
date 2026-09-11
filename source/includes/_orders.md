@@ -26,6 +26,7 @@ POST [HOST](#HTTP-HOST)/v1/orders
   "product": "BTC_USDT",
   "side": "buy",
   "type": "limit",
+  "time_in_force": "GTC",
   "stp": "dc",
   "price": "2.00",
   "size": "3.3000000000000000000",
@@ -154,6 +155,7 @@ REQUEST PARAMETERS
   "order_id": "127738628653088481",
   "funds": "0.0000000000000000000",
   "type": "limit",
+  "time_in_force": "GTC",
   "side": "buy",
   "status": "7",
   "client_oid": "QZ_2020-jj"
