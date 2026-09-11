@@ -189,6 +189,7 @@ RESPONSE PARAMETERS
 |size|Amount of base currency to buy/sell |string|
 |status|status|string|
 |type|limit: limit order/market: market order|string|
+|time_in_force|trade command,GTC|string|
 |created_at|created time|string|
 |updated_at|updated time|string|
 |client_oid|User-defined order number|string|
@@ -239,6 +240,7 @@ REQUEST PARAMETERS
   "order_id": "127738628653088481",
   "funds": "0.0000000000000000000",
   "type": "limit",
+  "time_in_force": "GTC",
   "side": "buy",
   "status": "7",
   "client_oid": "QZ_2020-jj"
@@ -274,6 +276,7 @@ RESPONSE PARAMETERS
 |size|Amount of base currency to buy/sell |string|
 |status|status|string|
 |type|limit: limit order/market: market order|string|
+|time_in_force|trade command,GTC|string|
 |created_at|created time|string|
 |updated_at|updated time|string|
 |client_oid|User-defined order number|string|
@@ -399,6 +402,7 @@ This interface can query the details of a single order, or multiple orders based
     "order_id": "128087977541664481",
     "funds": "592.668000000000000000",
     "type": "limit",
+    "time_in_force": "GTC",
     "side": "sell",
     "status": "2"
   }
@@ -430,6 +434,7 @@ RESPONSE PARAMETERS
 |size|Amount of base currency to buy/sell |string|
 |status|status|string|
 |type|limit: limit order/market: market order|string|
+|time_in_force|trade command,GTC|string|
 
 
 

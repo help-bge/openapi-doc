@@ -26,6 +26,7 @@ POST [HOST](#HTTP-HOST)/v1/orders
   "product": "BTC_USDT",
   "side": "buy",
   "type": "limit",
+  "time_in_force": "GTC",
   "stp": "dc",
   "price": "2.00",
   "size": "3.300000000000000000",
@@ -77,6 +78,7 @@ REQUEST PARAMETERS
 |product|商品，例:ETH_USD|true|string|
 |side|buy/sell|true|string|
 |type|limit:限價單/market:市價單|true|string|
+|time_in_force|GTC|string|
 |stp|自成交：dc：減少和取消（默認）co：取消最舊 cn：取消最新 cb：取消兩者|true|string|
 |time_in_force|交易指令,GTC|false|string|
 |funds|想要使用的報價貨幣數量|false|string|
@@ -154,6 +156,7 @@ REQUEST PARAMETERS
   "order_id": "127738628653088481",
   "funds": "0.000000000000000000",
   "type": "limit",
+  "time_in_force": "GTC",
   "side": "buy",
   "status": "7",
   "client_oid": "QZ_2020-jj"
@@ -189,6 +192,7 @@ RESPONSE PARAMETERS
 |size|買入/賣出的基礎貨幣數量|string|
 |status|狀態|string|
 |type|limit:限價單/market:市價單|string|
+|time_in_force|GTC|string|
 |created_at|創建時間|string|
 |updated_at|更新時間|string|
 |client_oid|用戶自定義訂單號|string|
@@ -239,6 +243,7 @@ REQUEST PARAMETERS
   "order_id": "127738628653088481",
   "funds": "0.000000000000000000",
   "type": "limit",
+  "time_in_force": "GTC",
   "side": "buy",
   "status": "7",
   "client_oid": "QZ_2020-jj"
@@ -274,6 +279,7 @@ RESPONSE PARAMETERS
 |size|買入/賣出的基礎貨幣數量|string|
 |status|狀態|string|
 |type|limit:限價單/market:市價單|string|
+|time_in_force|GTC|string|
 |created_at|創建時間|string|
 |updated_at|更新時間|string|
 |client_oid|用戶自定義訂單號|string|
@@ -399,6 +405,7 @@ REQUEST PARAMETERS
     "order_id": "128087977541664481",
     "funds": "592.668000000000000000",
     "type": "limit",
+    "time_in_force": "GTC",
     "side": "sell",
     "status": "2"
   }
@@ -430,6 +437,7 @@ RESPONSE PARAMETERS
 |size|買入/賣出的基礎貨幣數量|string|
 |status|狀態|string|
 |type|limit:限價單/market:市價單|string|
+|time_in_force|GTC|string|
 
 
 

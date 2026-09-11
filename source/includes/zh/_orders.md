@@ -72,17 +72,17 @@ REQUEST PARAMETERS
 
 `funds`: 期望交易额度。需要`side` 为 `buy`，代表以最新成交价进行买入，期望花费的最多资产额度。
 
-| 参数名称 | 参数说明 | 是否必须 | 数据类型 | 
-| -------- | -------- | -------- | -------- |
-|product|商品，例:ETH_USD|true|string|
-|side|buy/sell|true|string|
-|type|limit:限价单/market:市价单|true|string|
-|stp|自成交：dc：减少和取消（默认）co：取消最旧 cn：取消最新 cb：取消两者|true|string|
-|time_in_force|交易指令,GTC|false|string|
-|funds|想要使用的报价货币数量|false|string|
-|price|每个币的价格|false|string|
-|size|买入或卖出的数量|false|string|
-|client_oid|用户自定义订单号|false|string|
+| 参数名称 | 参数说明                                    | 是否必须 | 数据类型 | 
+| -------- |-----------------------------------------| -------- | -------- |
+|product| 商品，例:ETH_USD                            |true|string|
+|side| buy/sell                                |true|string|
+|type| limit:限价单/market:市价单                    |true|string|
+|stp| 自成交：dc：减少和取消（默认）co：取消最旧 cn：取消最新 cb：取消两者 |true|string|
+|time_in_force| 订单有效方式,GTC                              |false|string|
+|funds| 想要使用的报价货币数量                             |false|string|
+|price| 每个币的价格                                  |false|string|
+|size| 买入或卖出的数量                                |false|string|
+|client_oid| 用户自定义订单号                                |false|string|
 
 > <a name="ResonpseExample">RESPONSE EXAMPLE</a>
 
@@ -154,6 +154,7 @@ REQUEST PARAMETERS
   "order_id": "127738628653088481",
   "funds": "0.000000000000000000",
   "type": "limit",
+  "time_in_force": "GTC",
   "side": "buy",
   "status": "7",
   "client_oid": "QZ_2020-jj"
@@ -175,23 +176,24 @@ RESPONSE PARAMETERS
 - 6: 订单交易失败
 - 7: 订单被减量
 
-| 参数名称 | 参数说明 | 类型 | 
-| -------- | -------- | ----- |
-|filled_fees|成交费用|string|
-|filled_size|成交金额|string|
-|filled_amount|成交数量|string|
-|filled_average_price|成交均价|string|
-|funds|想要使用的报价货币数量|string|
-|order_id|订单编号|string|
-|price|每单位基础货币的价格|string|
-|product|商品|string|
-|side|buy/sell|string|
-|size|买入/卖出的基础货币数量|string|
-|status|状态|string|
-|type|limit:限价单/market:市价单|string|
-|created_at|创建时间|string|
-|updated_at|更新时间|string|
-|client_oid|用户自定义订单号|string|
+| 参数名称 | 参数说明                 | 类型 | 
+| -------- |----------------------| ----- |
+|filled_fees| 成交费用                 |string|
+|filled_size| 成交金额                 |string|
+|filled_amount| 成交数量                 |string|
+|filled_average_price| 成交均价                 |string|
+|funds| 想要使用的报价货币数量          |string|
+|order_id| 订单编号                 |string|
+|price| 每单位基础货币的价格           |string|
+|product| 商品                   |string|
+|side| buy/sell             |string|
+|size| 买入/卖出的基础货币数量         |string|
+|status| 状态                   |string|
+|type| limit:限价单/market:市价单 |string|
+|time_in_force| 订单有效方式               |string|
+|created_at| 创建时间                 |string|
+|updated_at| 更新时间                 |string|
+|client_oid| 用户自定义订单号             |string|
 
 <h2 id="根据用户自定义订单号查询单个订单">GET  根据用户自定义订单号查询单个订单</h2>
 
@@ -239,6 +241,7 @@ REQUEST PARAMETERS
   "order_id": "127738628653088481",
   "funds": "0.000000000000000000",
   "type": "limit",
+  "time_in_force": "GTC",
   "side": "buy",
   "status": "7",
   "client_oid": "QZ_2020-jj"
@@ -260,23 +263,24 @@ RESPONSE PARAMETERS
 - 6: 订单交易失败
 - 7: 订单被减量
 
-| 参数名称 | 参数说明 | 类型 | 
-| -------- | -------- | ----- |
-|filled_fees|成交费用|string|
-|filled_size|成交金额|string|
-|filled_amount|成交数量|string|
-|filled_average_price|成交均价|string|
-|funds|想要使用的报价货币数量|string|
-|order_id|订单编号|string|
-|price|每单位基础货币的价格|string|
-|product|商品|string|
-|side|buy/sell|string|
-|size|买入/卖出的基础货币数量|string|
-|status|状态|string|
-|type|limit:限价单/market:市价单|string|
-|created_at|创建时间|string|
-|updated_at|更新时间|string|
-|client_oid|用户自定义订单号|string|
+| 参数名称 | 参数说明                 | 类型 | 
+| -------- |----------------------| ----- |
+|filled_fees| 成交费用                 |string|
+|filled_size| 成交金额                 |string|
+|filled_amount| 成交数量                 |string|
+|filled_average_price| 成交均价                 |string|
+|funds| 想要使用的报价货币数量          |string|
+|order_id| 订单编号                 |string|
+|price| 每单位基础货币的价格           |string|
+|product| 商品                   |string|
+|side| buy/sell             |string|
+|size| 买入/卖出的基础货币数量         |string|
+|status| 状态                   |string|
+|type| limit:限价单/market:市价单 |string|
+|time_in_force| 订单有效方式               |string|
+|created_at| 创建时间                 |string|
+|updated_at| 更新时间                 |string|
+|client_oid| 用户自定义订单号             |string|
 
 
 <a name="order_detail_demo"></a>
@@ -399,6 +403,7 @@ REQUEST PARAMETERS
     "order_id": "128087977541664481",
     "funds": "592.668000000000000000",
     "type": "limit",
+    "time_in_force": "GTC",
     "side": "sell",
     "status": "2"
   }
@@ -420,16 +425,17 @@ RESPONSE PARAMETERS
 - 6: 订单交易失败
 - 7: 订单被减量
 
-| 参数名称 | 参数说明 | 类型 |
-| -------- | -------- | ----- |
-|funds|想要使用的报价货币数量|string|
-|order_id|订单编号|string|
-|price|每单位基础货币的价格|string|
-|product|产品编号|string|
-|side|buy/sell|string|
-|size|买入/卖出的基础货币数量|string|
-|status|状态|string|
-|type|limit:限价单/market:市价单|string|
+| 参数名称 | 参数说明                 | 类型 |
+| -------- |----------------------| ----- |
+|funds| 想要使用的报价货币数量          |string|
+|order_id| 订单编号                 |string|
+|price| 每单位基础货币的价格           |string|
+|product| 产品编号                 |string|
+|side| buy/sell             |string|
+|size| 买入/卖出的基础货币数量         |string|
+|status| 状态                   |string|
+|type| limit:限价单/market:市价单 |string|
+|time_in_force| 订单有效方式               |string|
 
 
 

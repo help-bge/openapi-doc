@@ -360,7 +360,7 @@ Description of order data fields, please ignore other fields other than this des
 | funds | Amount of quote currency to use | string |
 | filled_size | transaction amount | string |
 | type | limit: limit order/market: market order/ | string |
-| timeInForce | order time-in-force instruction | string |
+|time_in_force|trade command,GTC|string|
 | status | status | string |
 | client_oid | default "0", user-defined order number | string |
 
