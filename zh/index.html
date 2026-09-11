@@ -1694,7 +1694,7 @@ REQUEST PARAMETERS
 </tr>
 <tr>
 <td>time_in_force</td>
-<td>交易指令,GTC</td>
+<td>订单有效方式,GTC</td>
 <td>false</td>
 <td>string</td>
 </tr>
@@ -1819,6 +1819,7 @@ REQUEST PARAMETERS
   </span><span class="nl">"order_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127738628653088481"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"funds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000000000000000000"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limit"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"time_in_force"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buy"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"client_oid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QZ_2020-jj"</span><span class="w">
@@ -1906,6 +1907,11 @@ RESPONSE PARAMETERS
 <tr>
 <td>type</td>
 <td>limit:限价单/market:市价单</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time_in_force</td>
+<td>订单有效方式</td>
 <td>string</td>
 </tr>
 <tr>
@@ -1983,6 +1989,7 @@ REQUEST PARAMETERS
   </span><span class="nl">"order_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127738628653088481"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"funds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000000000000000000"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limit"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"time_in_force"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buy"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"client_oid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QZ_2020-jj"</span><span class="w">
@@ -2070,6 +2077,11 @@ RESPONSE PARAMETERS
 <tr>
 <td>type</td>
 <td>limit:限价单/market:市价单</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time_in_force</td>
+<td>订单有效方式</td>
 <td>string</td>
 </tr>
 <tr>
@@ -2330,6 +2342,7 @@ REQUEST PARAMETERS
     </span><span class="nl">"order_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"128087977541664481"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"funds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"592.668000000000000000"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limit"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time_in_force"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sell"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w">
   </span><span class="p">}</span><span class="w">
@@ -2397,6 +2410,11 @@ RESPONSE PARAMETERS
 <tr>
 <td>type</td>
 <td>limit:限价单/market:市价单</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time_in_force</td>
+<td>订单有效方式</td>
 <td>string</td>
 </tr>
 </tbody></table>
@@ -4619,6 +4637,7 @@ ERROR REQUEST EXAMPLE
       </span><span class="nl">"funds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.00000000"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"filled_size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.00000000"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limit"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"time_in_force"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"timeInForce"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"client_oid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
@@ -4723,6 +4742,11 @@ ERROR REQUEST EXAMPLE
 <tr>
 <td style="text-align: left">type</td>
 <td style="text-align: left">limit:限价单/market:市价单/</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="text-align: left">time_in_force</td>
+<td style="text-align: left">订单有效方式</td>
 <td>string</td>
 </tr>
 <tr>

@@ -1909,6 +1909,11 @@ RESPONSE PARAMETERS
 <td>string</td>
 </tr>
 <tr>
+<td>time_in_force</td>
+<td>trade command,GTC</td>
+<td>string</td>
+</tr>
+<tr>
 <td>created_at</td>
 <td>created time</td>
 <td>string</td>
@@ -1983,6 +1988,7 @@ REQUEST PARAMETERS
   </span><span class="nl">"order_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"127738628653088481"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"funds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0000000000000000000"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limit"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"time_in_force"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buy"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"client_oid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QZ_2020-jj"</span><span class="w">
@@ -2070,6 +2076,11 @@ RESPONSE PARAMETERS
 <tr>
 <td>type</td>
 <td>limit: limit order/market: market order</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time_in_force</td>
+<td>trade command,GTC</td>
 <td>string</td>
 </tr>
 <tr>
@@ -2330,6 +2341,7 @@ REQUEST PARAMETERS
     </span><span class="nl">"order_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"128087977541664481"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"funds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"592.668000000000000000"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limit"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time_in_force"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GTC"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sell"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w">
   </span><span class="p">}</span><span class="w">
@@ -2397,6 +2409,11 @@ RESPONSE PARAMETERS
 <tr>
 <td>type</td>
 <td>limit: limit order/market: market order</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time_in_force</td>
+<td>trade command,GTC</td>
 <td>string</td>
 </tr>
 </tbody></table>
@@ -4726,8 +4743,8 @@ Description of order data fields, please ignore other fields other than this des
 <td>string</td>
 </tr>
 <tr>
-<td style="text-align: left">timeInForce</td>
-<td style="text-align: left">order time-in-force instruction</td>
+<td style="text-align: left">time_in_force</td>
+<td style="text-align: left">trade command,GTC</td>
 <td>string</td>
 </tr>
 <tr>
